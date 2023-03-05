@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "breakdown": "^0.0.13",
+    "github-stats-box": "^1.0.0"
+  }
+}
