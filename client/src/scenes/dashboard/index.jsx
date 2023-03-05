@@ -27,7 +27,7 @@ const Dashboards = () => {
 
   const removeItem = (row) => {
     axios
-    this.delete(`http://localhost:5001/general/fahrer-delete/${row._id}`)
+      .delete(`http://localhost:5001/general/fahrer-delete/${row._id}`)
       .then(() => {
         // Remove the deleted item from the state
         this.setData(data.filter((item) => item._id !== row._id));
