@@ -21,7 +21,7 @@ function App() {
           <CssBaseline />
           <Routes>
             <Route element={<Layout />}>
-              <Route path="/" element={<Navigate to="/" replace />} />
+              <Route path="/" element={<Dashboards />} />
               <Route path="/dashboard" element={<Dashboards />} />
               <Route path="/fahrzeuge" element={<Fahrzeuge />} />
               <Route path="/fahrer" element={<Fahrer />} />

@@ -27,9 +27,9 @@ const Fahrer = () => {
 
   const removeItem = (row) => {
     axios.delete(`http://localhost:5001/general/fahrer-delete/${row._id}`)
-      .then(() => {
+      this.then(() => {
         // Remove the deleted item from the state
-        setData(data.filter((item) => item._id !== row._id));
+        this.setData(data.filter((item) => item._id !== row._id));
       })
       .catch((err) => {
         console.log("Error", err);

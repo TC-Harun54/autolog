@@ -19,7 +19,7 @@ const Fahrten = () => {
     axios
       .get("http://localhost:5001/general/fahrten")
       .then((result) => {
-        setData(result.data);
+        this.setData(result.data);
         console.log("====================================");
         console.log(result.data);
         console.log("====================================");
